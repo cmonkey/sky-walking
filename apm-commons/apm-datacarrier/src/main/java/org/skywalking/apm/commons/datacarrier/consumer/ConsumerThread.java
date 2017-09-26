@@ -69,9 +69,7 @@ public class ConsumerThread<T> extends Thread {
             if (data.size() == 0) {
                 continue;
             }
-            for (T element : data) {
-                consumeList.add(element);
-            }
+            consumeList.addAll(data);
             hasData = true;
 
         }
